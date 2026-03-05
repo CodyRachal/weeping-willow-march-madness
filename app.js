@@ -112,9 +112,9 @@ function renderRules() {
   const pot = paidCount * buyIn;
 
   const metaLine = document.getElementById("metaLine");
-if (metaLine) {
-  metaLine.textContent = `Players: ${paidCount} • Pot: $${pot}`;
-}
+  if (metaLine) {
+    metaLine.textContent = `Players: ${paidCount} • Pot: $${pot}`;
+  }
 
   $("rules").innerHTML = `
     <div><b>Buy-in:</b> $${buyIn} per person</div>
