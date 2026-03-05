@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weeping Willow March Madness Bracket</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>🌸 Weeping Willow March Madness Bracket 🏀</h1>
+      <div class="sub">
+        $20 buy-in • Weighted scoring • Round leader bonuses • No login
+      </div>
+    </div>
+    <div class="status" id="status">Loading…</div>
+  </header>
+
+  <!-- TOP 3 -->
+  <section class="card">
+    <h2>Leaderboard (Top 3)</h2>
+    <div class="small">Only PAID entries count toward standings.</div>
+    <div id="top3" class="top3"></div>
+  </section>
+
+  <!-- TABS -->
+  <nav class="tabs">
+    <button class="tab active" data-tab="bracket">Bracket</button>
+    <button class="tab" data-tab="picks">Make Picks</button>
+    <button class="tab" data-tab="rules">Rules & Payouts</button>
+  </nav>
+
+  <!-- BRACKET VIEW -->
+  <main class="grid">
+    <section class="card tabpanel" id="tab-bracket">
+      <h2>Bracket</h2>
+      <div class="small">
+        Bracket will populate after Selection Sunday (Mar 15). For now it’s ready and will show matchups once teams are loaded.
+      </div>
+      <div id="bracket" class="bracket"></div>
+    </section>
+
+    <!-- PICKS VIEW -->
+    <section class="card tabpanel hidden" id="tab-picks">
+      <h2>Submit Your Picks</h2>
+      <div class="small">
+        Your picks are <b>locked/unlocked by name</b>. If your name isn’t marked PAID yet, picks stay disabled.
+      </div>
+
+      <div class="formRow">
+        <label class="label" for="nameInput">Your name</label>
+        <input id="nameInput" class="input" placeholder="e.g., Sam W." />
+        <button id="checkNameBtn" class="btn">Check / Load</button>
+      </div>
+
+      <div id="payNotice" class="notice hidden"></div>
+
+      <div class="formRow">
+        <label class="label" for="tiebreakerInput">Tiebreaker (Championship total points)</label>
+        <input id="tiebreakerInput" class="input" type="number" min="80" max="220" placeholder="e.g., 147" />
+      </div>
+
+      <div class="picksHeader">
+        <div>
+          <h3>Your Picks</h3>
+          <div class="small">Pick winners for each game once matchups are loaded.</div>
+        </div>
+        <div class="actions">
+          <button id="saveLocalBtn" class="btn secondary">Save (Local)</button>
+          <button id="exportBtn" class="btn">Export My Picks</button>
+        </div>
+      </div>
+
+      <div id="picks" class="picks"></div>
+
+      <div class="small" style="margin-top:10px;">
+        Export sends you a file you can text/email to the commissioner. Once paid, commissioner adds you to the official entries list.
+      </div>
+    </section>
+
+    <!-- RULES VIEW -->
+    <section class="card tabpanel hidden" id="tab-rules">
+      <h2>Rules & Payouts</h2>
+      <div id="rules"></div>
+    </section>
+  </main>
+
+  <footer class="footer small">
+    Commissioner updates: bracket + paid list + entries + results.
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
