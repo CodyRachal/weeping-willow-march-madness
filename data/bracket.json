@@ -9,5 +9,8 @@
     { "key": "F4", "name": "Final Four", "weight": 16 },
     { "key": "CHAMP", "name": "Championship", "weight": 32 }
   ],
-  "games": []
+  "games": [
+    { "id": "R64-01", "round": "R64", "teamA": "TBD Team A", "teamB": "TBD Team B" },
+    { "id": "R64-02", "round": "R64", "teamA": "TBD Team C", "teamB": "TBD Team D" }
+  ]
 }
