@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "name": "Justin",
+      "paid": true,
+      "tiebreaker": 147,
+      "picks": {
+        "R64-01": "TEAM_A_PLACEHOLDER",
+        "R64-02": "TEAM_B_PLACEHOLDER"
+      }
+    }
+  ]
+}
