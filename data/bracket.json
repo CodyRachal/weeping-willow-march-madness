@@ -5,13 +5,9 @@
     { "key": "R64", "name": "Round of 64", "weight": 1 },
     { "key": "R32", "name": "Round of 32", "weight": 2 },
     { "key": "S16", "name": "Sweet 16", "weight": 4 },
-    { "key": "E8",  "name": "Elite 8", "weight": 8 },
-    { "key": "F4",  "name": "Final Four", "weight": 16 },
+    { "key": "E8", "name": "Elite 8", "weight": 8 },
+    { "key": "F4", "name": "Final Four", "weight": 16 },
     { "key": "CHAMP", "name": "Championship", "weight": 32 }
   ],
-  "games": [
-    { "id": "R64-01", "round": "R64", "teamA": null, "teamB": null },
-    { "id": "R64-02", "round": "R64", "teamA": null, "teamB": null }
-    // Add the remaining games after Selection Sunday
-  ]
+  "games": []
 }
