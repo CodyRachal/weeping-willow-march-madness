@@ -111,6 +111,18 @@ function renderRules() {
   const paidCount = (paidData?.paidNames || []).length;
   const pot = paidCount * buyIn;
 
+  const metaLine = document.getElementById("metaLine");
+  if (metaLine) metaLine.textContent = `Players: ${paidCount} • Pot: ${money(pot)}`;
+
+  $("rules").innerHTML = `
+    <div><b>Buy-in:</b> $${buyIn} per person</div>
+    <div><b>Paid entries (so far):</b> ${paidCount}</div>
+    <div><b>Current pot (paid only):</b> ${money(pot)}</div>
+    <hr />
+    ...
+  `;
+}
+
   $("rules").innerHTML = `
     <div><b>Buy-in:</b> $${buyIn} per person</div>
     <div><b>Paid entries (so far):</b> ${paidCount}</div>
